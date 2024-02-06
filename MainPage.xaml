@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="Matematika.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Matematika"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="Te">
+        <Button x:Name="AddButton" Content="+" Margin="686,374,0,0" VerticalAlignment="Top" Click="AddButton_Click"/>
+        <Button x:Name="SubtractButton" Content="-" Margin="0,376,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Click="SubtractButton_Click"/>
+        <Button x:Name="MultiplyButton" Content="*" Margin="783,374,0,0" VerticalAlignment="Top" Click="MultiplyButton_Click"/>
+        <Button x:Name="DivideButton" Content="/" Margin="828,375,0,0" VerticalAlignment="Top" Click="DivideButton_Click"/>
+        <TextBlock x:Name="rezultatBlock" HorizontalAlignment="Left" Margin="763,472,0,0" TextWrapping="Wrap" Text="REZULTAT" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="675,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <RadioButton x:Name="DecimalRadio" Content="Decimal" Margin="996,238,0,0" VerticalAlignment="Top" Checked="DecimalRadio_Checked" Click="DecimalRadio_Clicked"/>
+        <RadioButton x:Name="HexRadio" Content="Hexadecimal" Margin="996,273,0,0" VerticalAlignment="Top" Checked="HexRadio_Checked" Click="HexRadio_Click"/>
+        <RadioButton x:Name="OctRadio" Content="Octal" Margin="996,303,0,0" VerticalAlignment="Top" Click="OctalRadio_Click"/>
+        <RadioButton x:Name="BinaryRadio" Content="Binary" Margin="995,331,0,0" VerticalAlignment="Top" Click="BinaryRadio_Click"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="779,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
